@@ -10,8 +10,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.88.2"
+  },
   "devDependencies": {
+    "@webpack-cli/serve": "^1.0.1-alpha.5",
     "axios": "^0.21.0",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
