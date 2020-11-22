@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import PageHeader from '../template/PageHeader';
-import BookForm from './bookForm';
-import BookList from './bookList';
+import PageHeader from '../template/pageHeader';
+import BookForm from '../template/bookform';
+import BookList from '../template/booklist';
 
 export default class Book extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class Book extends Component {
   render() {
     return (
       <div>
-        <PageHeader name="Cadastro" small="livros"></PageHeader>
+        <PageHeader name="Cadastro" small="Livros"></PageHeader>
         <BookForm />
         <BookList />
       </div>

@@ -10,7 +10,7 @@ export default (props) => {
         <td>
           <IconButton style="success" icon="check"></IconButton>
           <IconButton style="warning" icon="undo"></IconButton>
-          <IconButton style="danger" icon="trasch-o"></IconButton>
+          <IconButton style="danger" icon="trash-o"></IconButton>
         </td>
       </tr>
     ));

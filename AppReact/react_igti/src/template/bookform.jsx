@@ -1,34 +1,33 @@
 import React from 'react';
-import grid from '../template/grid';
-import IconButton from '../template/iconButton';
 import Grid from '../template/grid';
+import IconButton from '../template/iconButton';
 
 export default (props) => {
   return (
     <div role="form" className="bookForm">
       <Grid cols="4">
-        <imput
+        <input
           id="nome"
           className="form-control"
           placeholder="Adicione um livro"
           value={props.nome}
-        ></imput>
+        ></input>
       </Grid>
       <Grid cols="4">
-        <imput
+        <input
           id="autor"
           className="form-control"
           placeholder="Adicione o autor do livro"
           value={props.autor}
-        ></imput>
+        ></input>
       </Grid>
       <Grid cols="2">
-        <imput
+        <input
           id="preco"
           className="form-control"
           placeholder="Adione o preço do livro"
           value={props.preco}
-        ></imput>
+        ></input>
       </Grid>
       <Grid cols="2">
         <IconButton
