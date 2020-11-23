@@ -3,7 +3,7 @@
     <p>Adicionar uma tarefa a ser realizada</p>
   </div>
   <div class="col">
-    <p>Sua lista de tarefas</p>
+    <p>Sua lista de tarefas ({{ itemCount }})</p>
   </div>
 </div>
 <div class="container color-light">
@@ -16,11 +16,19 @@
         class="txt"
         name="item"
         placeholder="Objetivos de vida"
+        [(ngModel)]="objetivoText"
       />
-      <input type="submit" class="btn" value="Adionar Tarefas" />
+      <input
+        type="submit"
+        class="btn"
+        value="{{ btnText }}"
+        (click)="addItem()"
+      />
     </form>
   </div>
   <div class="col">
-    <p class="life-container">viajar pelo Mundo!</p>
+    <p class="life-container" *ngFor="let objetivo of objetivos">
+      {{ objetivo }}
+    </p>
   </div>
 </div>
