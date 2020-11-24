@@ -29,6 +29,12 @@
   <div class="col">
     <p class="life-container" *ngFor="let objetivo of objetivos">
       {{ objetivo }}
+      <input
+        type="submit"
+        class="btn"
+        value="{{ btnRemove }}"
+        (click)="removeItem()"
+      />
     </p>
   </div>
 </div>
